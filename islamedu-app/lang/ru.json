@@ -1,0 +1,23 @@
+{
+    "Avatar": "Аватар",
+    "Name": "Имя",
+    "Email Address": "E-mail адрес",
+    "Current Password": "Текущий пароль",
+    "New Password": "Новый пароль",
+    "Incorrect Password": "Неверный пароль",
+    "Data updated successfully":"Данные успешно обновлены",
+    "Password": "Пароль",
+    "Confirm Password": "Повторите пароль",
+    "Register": "Зарегистрироваться", 
+    "Save": "Сохранить",
+    "Remember Me": "Запомнить",
+    "Login": "Войти",
+    "Forgot Your Password?": "Забыли пароль?",
+    "Best online courses": "Лучшие онлайн курсы",
+    "Courses": "Курсы",
+    "Links": "Ссылки",
+    "Roles": "Роли",
+    "Permissions": "Разрешения",
+    "You do not have access to this section": "У вас нет доступа к этому разделу",
+    "For access, please contact the site administration": "Для доступа обращайтесь к администрации сайта"
+}

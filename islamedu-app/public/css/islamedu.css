@@ -1,0 +1,26 @@
+:root {
+    --primary-font: 'Montserrat';
+    --secondary-font: 'Nunito';
+}
+body {
+    font-family: var(--secondary-font);
+}
+.latest-course-content {
+    flex: 1;
+}
+.latest-course-img {
+    width: 120px;
+}
+a, p, .text {
+    font-family: var(--secondary-font);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary-font);
+}
+.sec-title h2 {
+    font-family: var(--primary-font);
+}
+
+.sec-title .sub-title {
+    font-family: var(--secondary-font);
+}
