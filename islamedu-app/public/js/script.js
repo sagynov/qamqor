@@ -673,8 +673,7 @@
    When document is loading, do
    ========================================================================== */
 	
-	$(window).on('load', function() {
-		handlePreloader();
-	});	
+	handlePreloader();
+	
 
 })(window.jQuery);

@@ -246,7 +246,7 @@ $links = [
 					<!--Footer Column-->
 					<div class="footer-column col-xl-5 col-lg-4 col-md-6 col-sm-12">
 						<div class="footer-widget contact-widget">
-							<h4 class="widget-title">Contact</h4>
+							<h4 class="widget-title">{{ __('Contact') }}</h4>
 							<div class="widget-content">
 								<ul class="contact-info">
 									<li><i class="fa fa-phone-square"></i> <a href="tel:+926668880000">+92 (0088) 6823</a></li>
