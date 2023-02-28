@@ -60,9 +60,11 @@
                                 {{ __('Login') }}
                             </button>
                             @if (Route::has('register'))
-                                <a class="btn btn-link" href="{{ route('register') }}">
-                                    {{ __('Register') }}
-                                </a>
+                                <div class="mt-3">
+                                    <a class="btn btn-link" href="{{ route('register') }}">
+                                        {{ __('Register') }}
+                                    </a>
+                                </div>
                             @endif
                             <?php
                             /*

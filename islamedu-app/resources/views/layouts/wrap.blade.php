@@ -70,9 +70,9 @@ $links = [
 
 
                 <div class="outer-box">
-                    <a href="tel:+92(8800)9806" class="info-btn">
+                    <a href="tel:+77053776288" class="info-btn">
                         <i class="icon fa fa-phone"></i>
-                        <small>Call Anytime</small><br> +92 (8800) - 8960
+                        <small>Звоните сейчас</small><br> +7(705)377 62 88
                     </a>
 
                     <div class="ui-btn-outer">
@@ -135,17 +135,17 @@ $links = [
                         <div class="contact-info-box">
                             <i class="icon lnr-icon-phone-handset"></i>
                             <span class="title">Звоните сейчас</span>
-                            <a href="tel:+92880098670">+92 (8800) - 98670</a>
+                            <a href="tel:+77053776288">+7(705) 377 62 88</a>
                         </div>
                     </li>
                 </ul>
 
 
                 <ul class="social-links">
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://instagram.com/kamalbay_yusupbayuli"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.youtube.com/@kamalbay_yusupbayuli1052"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="https://t.me/kamalbayyusupbayuli"><i class="fab fa-telegram"></i></a></li>
+					<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
                 </ul>
             </nav>
         </div><!-- End Mobile Menu -->
@@ -211,10 +211,10 @@ $links = [
 							<div class="logo"><a href="/"><img style="width: 150px;" src="/images/logo.png" alt="" ></a></div>
 							<div class="text">{{ __('Best online courses') }}</div>
 							<ul class="social-icon-two">
-								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="https://instagram.com/kamalbay_yusupbayuli"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="https://www.youtube.com/@kamalbay_yusupbayuli1052"><i class="fab fa-youtube"></i></a></li>
+								<li><a href="https://t.me/kamalbayyusupbayuli"><i class="fab fa-telegram"></i></a></li>
 								<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -249,11 +249,10 @@ $links = [
 							<h4 class="widget-title">{{ __('Contact') }}</h4>
 							<div class="widget-content">
 								<ul class="contact-info">
-									<li><i class="fa fa-phone-square"></i> <a href="tel:+926668880000">+92 (0088) 6823</a></li>
-									<li><i class="fa fa-envelope"></i> <a href="mailto:needhelp@potisen.com">needhelp@company.com</a></li>
-									<li><i class="fa fa-map-marker-alt"></i> 80 Broklyn Golden Street. New York. USA</li>
+									<li><i class="fa fa-phone-square"></i> <a href="tel:+77053776288">+7(705)377 62 88</a></li>
+									<li><i class="fa fa-envelope"></i> <a href="mailto:qamqor2022@gmail.com">qamqor2022@gmail.com</a></li>
+									<li><i class="fa fa-map-marker-alt"></i> Актау, Казахстан</li>
 								</ul>
-								
 							</div>
 						</div>
 					</div>
