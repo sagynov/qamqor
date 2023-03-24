@@ -20,7 +20,7 @@
 <!--Start courses Details-->
 <section class="course-details">
     <div class="container">
-        @can('view courses')
+        @if($user->can('view courses') || $hasAccess)
         <div class="row flex-xl-row-reverse">
             <!--Start courses Details Content-->
             <div class="col-xl-8 col-lg-8">
@@ -79,7 +79,7 @@
                     {{ __('For access, please contact the site administration') }}
                 </div>
             </div>
-        @endcan
+        @endif
     </div>
 </section>
 <!--End courses Details-->

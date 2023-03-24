@@ -55,6 +55,9 @@ class CourseItem extends Model
     public function videos() {
         return $this->hasMany(CourseVideo::class, 'course_item_id', 'id');
     }
+    public function students() {
+        return $this->belongsToMany(UserCourse::class, 'course_item_id', 'user_id');
+    }
     /*
     |--------------------------------------------------------------------------
     | SCOPES

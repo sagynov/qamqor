@@ -9,6 +9,7 @@ use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\PermissionManager\app\Http\Requests\UserStoreCrudRequest as StoreRequest;
 use Backpack\PermissionManager\app\Http\Requests\UserUpdateCrudRequest as UpdateRequest;
 use Illuminate\Support\Facades\Hash;
+use Backpack\CRUD\app\Library\Widget;
 
 /**
  * Class UserCrudController
@@ -64,6 +65,14 @@ class UserCrudController extends CrudController
                 'entity'    => 'permissions', // the method that defines the relationship in your Model
                 'attribute' => 'name', // foreign key attribute that is shown to user
                 'model'     => config('permission.models.permission'), // foreign key model
+            ],
+            [ // n-n relationship (with pivot table)
+                'label'     => __('user.courses'), // Table column heading
+                'type'      => 'select_multiple',
+                'name'      => 'courses', // the method that defines the relationship in your Model
+                'entity'    => 'courses', // the method that defines the relationship in your Model
+                'attribute' => 'title', // foreign key attribute that is shown to user
+                'model'     => \App\Models\UserCourse::class, // foreign key model
             ]
         ]);
         CRUD::column('password')->type('password');
@@ -83,12 +92,14 @@ class UserCrudController extends CrudController
      */
     public function setupCreateOperation()
     {
+        Widget::add()->type('script')->content('js/admin/crud/create.js');
         $this->addUserFields();
         $this->crud->setValidation(StoreRequest::class);
     }
 
     public function setupUpdateOperation()
     {
+        Widget::add()->type('script')->content('js/admin/crud/create.js');
         $this->addUserFields();
         $this->crud->setValidation(UpdateRequest::class);
     }
@@ -192,6 +203,17 @@ class UserCrudController extends CrudController
                         'number_columns' => 3, //can be 1,2,3,4,6
                     ],
                 ],
+            ],
+            [   
+                // SelectMultiple = n-n relationship (with pivot table)
+                'label'     => __('user.courses'),
+                'type'      => 'select_multiple',
+                'name'      => 'courses', // the method that defines the relationship in your Model
+                // optional
+                'entity'    => 'courses', // the method that defines the relationship in your Model
+                'model'     => \App\Models\CourseItem::class, // foreign key model
+                'pivot' => true,
+                'attribute' => 'title', // foreign key attribute that is shown to user,
             ],
         ]);
     }

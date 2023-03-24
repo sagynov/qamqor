@@ -7,6 +7,7 @@ use App\Models\CourseItem;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Auth;
 
 class CourseCategoryController extends Controller
 {
@@ -41,7 +42,9 @@ class CourseCategoryController extends Controller
     {
 
         $items = CourseItem::where('course_category_id', $courseCategory->id)->with('category')->withCount('videos')->get();
-        return view('course-category.detail', compact('courseCategory', 'items'));
+        $user = Auth::user();
+        $courses = $user->courses()->where('course_category_id', $courseCategory->id)->with('category')->withCount('videos')->get();
+        return view('course-category.detail', compact('courseCategory', 'items', 'courses'));
     }
 
     /**

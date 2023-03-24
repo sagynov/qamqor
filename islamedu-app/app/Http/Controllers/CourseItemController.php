@@ -6,6 +6,7 @@ use App\Models\CourseItem;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Auth;
 
 class CourseItemController extends Controller
 {
@@ -40,7 +41,9 @@ class CourseItemController extends Controller
     {
         $category = $courseItem->category;
         $videos = $courseItem->videos;
-        return view('course-item.detail', compact('courseItem', 'category', 'videos'));
+        $user = Auth::user();
+        $hasAccess = $user->courses()->where('course_item_id', $courseItem->id)->exists();
+        return view('course-item.detail', compact('courseItem', 'category', 'videos', 'user', 'hasAccess'));
     }
 
     /**

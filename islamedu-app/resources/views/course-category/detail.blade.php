@@ -19,6 +19,7 @@
 <!-- Courses Section -->
 <section>
     <div class="container pb-100">
+        @can('view courses')
         <div class="row">
             @foreach($items as $item)
             <!-- Course Block Two-->
@@ -42,6 +43,38 @@
             <!-- End -->
             @endforeach
         </div>
+        @else
+            @if($courses->count() > 0)
+                @foreach($courses as $item)
+                 <!-- Course Block Two-->
+                <div class="course-block-two col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="{{ route('course-item.show', ['course_item' => $item]) }}"><img src="{{ asset('storage/'.$item->image) }}" alt=""></a></figure>
+                            
+                            <div class="value">{{ $item->category->title }}</div>
+                        </div>
+                        <div class="content-box">
+                            
+                            <h5 class="title"><a href="{{ route('course-item.show', ['course_item' => $item]) }}">{{ $item->title }}</a></h5>
+                            <ul class="course-info">
+                                <li><i class="fas fa-video"></i> {{ $item->videos_count }} {{ __('course.item.videos')}}</li>
+                                <li><i class="fas fa-language"></i> {{ __('course.item.'.$item->language) }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End -->
+                @endforeach
+            @else
+                <div class="sec-title">
+                    <h4>{{ __('You do not have access to this section') }}</h4>
+                    <div class="text">
+                        {{ __('For access, please contact the site administration') }}
+                    </div>
+                </div>
+            @endif
+        @endcan
     </div>
 </section>
 <!-- End Courses Section-->
