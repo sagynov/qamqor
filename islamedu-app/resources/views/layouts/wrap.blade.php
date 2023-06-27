@@ -250,7 +250,7 @@ $links = [
 							<div class="widget-content">
 								<ul class="contact-info">
 									<li><i class="fa fa-phone-square"></i> <a href="tel:+77053776288">+7(705)377 62 88</a></li>
-									<li><i class="fa fa-envelope"></i> <a href="mailto:qamqor2022@gmail.com">qamqor2022@gmail.com</a></li>
+									<li><i class="fa fa-envelope"></i> <a href="mailto:qamqor2022@gmail.com">ruhdamukz@gmail.com</a></li>
 									<li><i class="fa fa-map-marker-alt"></i> Актау, Казахстан</li>
 								</ul>
 							</div>
