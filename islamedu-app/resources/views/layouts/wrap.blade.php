@@ -12,7 +12,7 @@ $links = [
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>QAMQOR 2022</title>
+<title>RuhDamu Online</title>
 <!-- Stylesheets -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
