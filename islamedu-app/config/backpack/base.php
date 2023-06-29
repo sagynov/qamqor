@@ -85,7 +85,7 @@ return [
     // ------
 
     // Menu logo. You can replace this with an <img> tag if you have a logo.
-    'project_logo'   => '<b>QAMQOR</b> 2022',
+    'project_logo'   => '<b>Ruhdamu</b> Online',
 
     // Show / hide breadcrumbs on admin panel pages.
     'breadcrumbs' => true,
