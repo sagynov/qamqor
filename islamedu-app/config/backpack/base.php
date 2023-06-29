@@ -24,7 +24,7 @@ return [
     // ----
 
     // Project name. Shown in the window title.
-    'project_name' => 'QAMQOR 2022',
+    'project_name' => 'Ruhdamu Online',
 
     // When clicking on the admin panel's top-left logo/name,
     // where should the user be redirected?
