@@ -25,7 +25,10 @@ class CourseItemRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'image' => 'required',
+            'title' => 'required',
+            'language' => 'required',
+            'course_category_id' => 'required',
         ];
     }
 
